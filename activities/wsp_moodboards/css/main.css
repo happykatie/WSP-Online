@@ -1,0 +1,36 @@
+#container{
+	margin: 0% auto;
+	background:#fff;
+}
+
+body{
+	max-width: 860px;
+	margin: 0% auto;
+	padding: 30px;
+	background-color: #ededed;
+}
+
+h1{
+	font: 24px Helvetica, sans-serif;
+	color: #000;
+	padding: 30px 30px 0px 30px;
+}
+
+p{
+	padding: 0px 30px;
+	font: 14px/1.5 Helvetica, sans-serif;
+	color: #777;
+}
+
+hr{
+	border-top: 1px solid #aaa;
+	max-width: 800px;
+}
+
+#gallery ul{
+	list-style-type: none;
+}
+
+.shadow{
+	box-shadow: 3px 3px 4px #000;
+}
