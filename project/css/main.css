@@ -1,0 +1,135 @@
+/* 
+Eric Meyer's CSS Reset -- http://meyerweb.com/eric/tools/css/reset/ -- v1.0 | 20080212
+CSSresetr.com
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------ END OF CSS RESET ------------ */
+/* ------------ END OF CSS RESET ------------ */
+/* ------------ END OF CSS RESET ------------ */
+
+
+
+container{
+	
+}
+
+body{
+	font: 87.5%/1.5 arial, sans-serif; /*14px*/
+	max-width: 960px;
+	height: 100%;
+	margin: 0% auto;
+	padding: 0%;
+	background-color: #f8f1dd;
+}
+
+
+/* --- Top Color Boxes --- */
+
+#colorbox1{
+	height: 40px;
+    background-color: #13366C;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#colorbox2{
+	height: 10px;
+    background-color: #000;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+
+/* --- Left Side Bar --- */
+#leftbar{
+	background-color: #f8f1dd;
+	float: left;
+	max-width: 250px;
+}
+
+
+/* --- Main Content Center --- */
+#maincontent{
+	background-color: #fff;
+	float: left;
+	max-width: 460px;
+}
+
+
+/* --- Right Side Bar --- */
+#rightbar{
+	background-color: #f8f1dd;
+	float: right;
+	max-width: 250px;
+}
+
+
+/* --- Footer --- */
+
+footer{
+	clear: both;
+	background-color: #13366C;
+}
+
+hr{
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #c1c1c1;
+}
