@@ -1,39 +1,195 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 	<head>
-		<meta charset="utf-8">
-		<title>City of Okeechobee</title>
-		<link rel="stylesheet" href="css/main.css">
+		<meta name="author" content="Katie Roberts"/>
+		<meta name="description" content="City of Okeechobee, Florida"/>
+		<meta name="keywords" content="City of Okeechobee, Florida, Okeechobee, City of Okeechobee, Okeechobee County, Events, Community, Government, Departments, Contacts"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="utf-8"/>
+		<title>Contacts | City of Okeechobee</title>
+		<link rel="stylesheet" href="css/contacts.css">
 	</head>
 	
+	<div id="container">
+		
 	<body>
-		<header>
-			<div id="seal"><a href="index.html"><img src="images/okeechobee_seal.png" alt="City of Okeechobee" title="City of Okeechobee"></a></div>
-			<h1>City of Okeechobee</h1>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="events.html">Events</a></li>
-				<li><a href="community.html">Community</a></li>
-				<li><a href="government.html">Government</a></li>
-				<li><a href="departments.html">Departments</a></li>
-				<li><a href="contacts.html">Contacts</a></li>
-			</ul>
-		</nav>
+		
+			<header>
+				<div id="seal"><a href="index.html"><img src="images/okeechobeeseal_80x78.png" alt="City of Okeechobee Home Page" title="City of Okeechobee"></a></div>
+				<h1>City of Okeechobee</h1>
+			</header>
+		
+			<!--- Navigation --->
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="community.html">Community</a></li>
+					<li><a href="government.html">Government</a></li>
+					<li><a href="departments.html">Departments</a></li>
+					<li class="contacts"><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+			
+		<div id="whitebox">
+		
+		<!--- Main Content Center --->
+		<div id="maincontent">
+		
+		<article class="main">
+			<h1>How to Contact the City of Okeechobee</h1>
+				<h2>Okeechobee City Hall</h2>
+					<p>Phone: (863) 763-3372</p>
+					<p>Address: 55 SE 3rd Avenue, Okeechobee, FL 34974</p>
+					<p>Hours: 8 a.m. to 5 p.m. - Monday-Friday - excluding holidays</p>
+				<h2>Contacting City Departments</h2>
+					<p>Fill out the following online form or select a phone number from the contact list below.</p>
+				<h3>Send Us A Message</h3>
+					<!-- Form -->
+					<form method="post" action="mailto:katieroberts@fullsail.com" class="contact">
+						<p>
+							<label for="firstname">First Name:</label>
+							<input type="text" name="firstname" id="firstname"/>
+						</p>
+						<p>
+							<label for="lastname">Last Name:</label>
+							<input type="text" name="lastname" id="lastname"/>
+						</p>
+						<p>
+							<label for="email">Email:</label>
+							<input type="text" name="email" id="email"/>
+						</p>
+						<!-- Select Dropdown -->
+						<div>			
+							<label for="department">Department:</label>
+						</div>
+						<div>			
+							<select name="department" id="department">
+								<option>Administration</option>
+								<option>Building Department</option>
+								<option>City Clerk</option>
+								<option>City Engineer</option>
+								<option>Finance</option>
+								<option>Fire Department</option>
+								<option>Planning and Zoning</option>
+								<option>Parks and Recreation</option>
+								<option>Police Department</option>
+							</select>
+						</div>
+						
+						<p><label for="message">Message:</label></p>
+						<p><textarea name="message" rows="7" cols="60" id="message"></textarea></p>	
+						
+						<button type="submit" name="submit" class="button">Send Message</button>
+					</form>
+		</article>
+		</div>
+		
+		<!-- Table -->
+		<section>
+			<table summary="City of Okeechobee Department Contact List">
+				<tr>
+					<th>City Department</th>
+					<th>Contact</th>
+					<th>Phone</th>
+					<th>Fax</th>
+				</tr>
+				<tr>
+					<td>City Administrator</td>
+					<td>Brian Whitehall</td>
+					<td>863-763-3372 ext. 212</td>
+					<td>863-763-1686</td>
+				</tr>
+				<tr class="odd_row">
+					<td>Building Permits</td>
+					<td>Brian Whitehall</td>
+					<td>863-763-3372 ext. 212</td>
+					<td>863-763-1686</td>
+				</tr>
+				<tr>
+					<td>City Attorney</td>
+					<td>John R. Cook</td>
+					<td>863-467-0297</td>
+					<td>863-467-4798</td>
+				</tr>
+				<tr class="odd_row">
+					<td>City Clerk</td>
+					<td>Lane Gamiotea</td>
+					<td>863-763-3372 ext. 215</td>
+					<td>863-763-1686</td>
+				</tr>
+				<tr>
+					<td>Code Enforcement</td>
+					<td>Herb Smith</td>
+					<td>863-357-1971</td>
+					<td>863-763-1686</td>
+				</tr>
+				<tr class="odd_row">
+					<td>Emergency Management</td>
+					<td>David McCain</td>
+					<td>863-763-3212</td>
+					<td>863-763-1569</td>
+				</tr>
+				<tr>
+					<td>Fire Dept.</td>
+					<td>Herb Smith</td>
+					<td>863-357-1971</td>
+					<td>863-763-1686</td>
+				</tr>
+				<tr class="odd_row">
+					<td>Parks & Recreation</td>
+					<td>John Smith</td>
+					<td>863-763-6950</td>
+					<td>863-763-0662</td>
+				</tr>
+				<tr>
+					<td>Police Dept.</td>
+					<td>Denny Davis</td>
+					<td>863-763-5521</td>
+					<td>863-763-7804</td>
+				</tr>
+			</table>				
+		</section>
+		
+		<!-- Right Side Bar -->
+		<div id="rightbar">
+			<div class="payments"><h3>Online Payments</h3></div>
+				<h4>Pay Bills Online</h4>
+				<h4>Register For Online Payments</h4>
+			<div class="weather"><h3>Weather</h3></div>
+				<h4>Today's Forecast</h4>
+				<p><em>Mostly Sunny</em></p>
+				<p class="temps">H: 100° | L: 84°</p>
+		</div>
+		
+		</div><!--- Whitebox Ends --->
+				
+		<!--- Footer --->
 		<footer>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="events.html">Events</a></li>
-				<li><a href="community.html">Community</a></li>
-				<li><a href="government.html">Government</a></li>
-				<li><a href="departments.html">Departments</a></li>
-				<li><a href="contacts.html">Contacts</a></li>
-			</ul>
-			<hr />
-			<p>Copyright ©2012 City of Okeechobee. All Rights Reserved.</p>
+			<div id="footernav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="community.html">Community</a></li>
+					<li><a href="government.html">Government</a></li>
+					<li><a href="departments.html">Departments</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+				<p>City Hall, 55 SE 3rd Avenue, Okeechobee, FL 34974  |  Phone: 863-763-3372  |  Fax:  863-763-1686</p>
+			</div>
+			<div id="socialnetworks">
+				<p>SOCIAL NETWORKS:</p>
+				<a href="#"><img src="images/facebook_27x27.png" alt="Like Us On Facebook" title="Like Us On Facebook"></a>
+				<a href="#"><img src="images/twitter_27x27.png" alt="Follow Us On Twitter" title="Follow Us On Twitter"></a>
+			</div>
+			<div id="copyright">
+				<hr>
+				<p>&copy; 2012 City of Okeechobee. All Rights Reserved.</p>
+			</div>
 		</footer>
+	
 	</body>
+	</div>
 	
 </html>
