@@ -20,7 +20,7 @@
 				<h1>City of Okeechobee</h1>
 			</header>
 		
-			<!--- Navigation --->
+			<!-- Navigation -->
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -34,10 +34,10 @@
 			
 		<div id="whitebox">
 		
-		<!--- Main Content Center --->
+		<!-- Main Content Center -->
 		<div id="maincontent">
 		
-		<article class="main">
+		<article>
 			<h1>How to Contact the City of Okeechobee</h1>
 				<h2>Okeechobee City Hall</h2>
 					<p>Phone: (863) 763-3372</p>
@@ -47,19 +47,20 @@
 					<p>Fill out the following online form or select a phone number from the contact list below.</p>
 				<h3>Send Us A Message</h3>
 					<!-- Form -->
-					<form method="post" action="mailto:katieroberts@fullsail.com" class="contact">
-						<p>
+					<form method="get" action="mailto:katieroberts@fullsail.com" class="contact">
+						
+						<div>
 							<label for="firstname">First Name:</label>
 							<input type="text" name="firstname" id="firstname"/>
-						</p>
-						<p>
+						</div>
+						<div>
 							<label for="lastname">Last Name:</label>
 							<input type="text" name="lastname" id="lastname"/>
-						</p>
-						<p>
+						</div>
+						<div>
 							<label for="email">Email:</label>
 							<input type="text" name="email" id="email"/>
-						</p>
+						</div>
 						<!-- Select Dropdown -->
 						<div>			
 							<label for="department">Department:</label>
@@ -78,13 +79,19 @@
 							</select>
 						</div>
 						
-						<p><label for="message">Message:</label></p>
-						<p><textarea name="message" rows="7" cols="60" id="message"></textarea></p>	
+						<div>
+							<label for="message">Message:</label>
+							<textarea rows="7" cols="60" id="message"></textarea>
+						</div>	
 						
-						<button type="submit" name="submit" class="button">Send Message</button>
+						<div>
+							<button type="submit" name="submit" class="button">Send Message</button>
+						</div>
+						
 					</form>
 		</article>
-		</div>
+		
+		<hr noshade>
 		
 		<!-- Table -->
 		<section>
@@ -151,21 +158,36 @@
 				</tr>
 			</table>				
 		</section>
-		
-		<!-- Right Side Bar -->
-		<div id="rightbar">
-			<div class="payments"><h3>Online Payments</h3></div>
-				<h4>Pay Bills Online</h4>
-				<h4>Register For Online Payments</h4>
-			<div class="weather"><h3>Weather</h3></div>
-				<h4>Today's Forecast</h4>
-				<p><em>Mostly Sunny</em></p>
-				<p class="temps">H: 100° | L: 84°</p>
+
 		</div>
 		
-		</div><!--- Whitebox Ends --->
+		<!-- Aside - Right Side Bar -->
+		<div id="aside">
+		
+		<aside>
+		
+			<div class="payments">
+			<h3>Online Payments</h3>
+			</div>
+			
+				<h4><a href="#">Pay Bills Online</a></h4>
+				<h4><a href="#">Register For Online Payments</a></h4>
 				
-		<!--- Footer --->
+			<div class="weather">
+			<h3>Weather</h3>
+			</div>
+			
+				<h4 class="forcast">Today's Forecast</h4>
+				<p><em>Mostly Sunny</em></p>
+				<p class="temps">H: 100° | L: 84°</p>
+		
+		</aside>
+		</div>
+		
+		</div><!-- Whitebox Ends -->
+				
+		<!-- Footer -->
+		<div id="footer">
 		<footer>
 			<div id="footernav">
 				<ul>
@@ -177,17 +199,20 @@
 					<li><a href="contacts.html">Contacts</a></li>
 				</ul>
 				<p>City Hall, 55 SE 3rd Avenue, Okeechobee, FL 34974  |  Phone: 863-763-3372  |  Fax:  863-763-1686</p>
-			</div>
+			</div><!-- End Footernav -->
 			<div id="socialnetworks">
-				<p>SOCIAL NETWORKS:</p>
-				<a href="#"><img src="images/facebook_27x27.png" alt="Like Us On Facebook" title="Like Us On Facebook"></a>
-				<a href="#"><img src="images/twitter_27x27.png" alt="Follow Us On Twitter" title="Follow Us On Twitter"></a>
-			</div>
+				<ul>
+					<li>SOCIAL NETWORKS:</li>
+					<li><a href="#"><img src="images/facebook_27x27.png" alt="Like Us On Facebook" title="Like Us On Facebook"></a></li>
+					<li><a href="#"><img src="images/twitter_27x27.png" alt="Follow Us On Twitter" title="Follow Us On Twitter"></a></li>
+				</ul>
+			</div><!-- End Socialnetworks -->
 			<div id="copyright">
 				<hr>
 				<p>&copy; 2012 City of Okeechobee. All Rights Reserved.</p>
 			</div>
 		</footer>
+		</div>
 	
 	</body>
 	</div>
