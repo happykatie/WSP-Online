@@ -20,7 +20,7 @@
 				<h1>City of Okeechobee</h1>
 			</header>
 		
-			<!--- Navigation --->
+			<!-- Navigation -->
 			<nav>
 				<ul>
 					<li class="home"><a href="index.html">Home</a></li>
@@ -34,60 +34,99 @@
 			
 		<div id="whitebox">
 		
-		<!--- Left Side Bar --->
+		<!-- Left Side Bar -->
 		<div id="leftbar">
-		<div class="leftbartext">
+		<aside>
 			<h3>Events</h3>
 				<h4>Humane Society Volunteer Signup</h4>
 					<h5>Fri, Aug 3rd - All Day</h5>
 					<p>Humane Society is accepting volunteer applications for dog training, walking, feeding, grooming, cleaning.</p> 
 					<p><a href="#">Make A Difference ►</a></p>
-				<hr>
+				<hr noshade>
 				<h4>First Day Of School For Students</h4>
 					<h5>Mon, Aug 20th - All Day</h5>
 					<p>Be sure you check with your school for school policies and what students will need to be ready.</p> 
 					<p><a href="#">Back To School ►</a></p>
-				<hr>
+				<hr noshade>
 				<h4>Okeechobee Garden Club Meeting</h4>
 					<h5>Mon, Aug 27th - 6:00pm</h5>
 					<p>Informal get-together of gardening enthusiasts at the Okeechobee Extension Office.</p> 
 					<p><a href="#">Complete Meeting Info ►</a></p>
-		</div>
+		</aside>
 		</div>
 		
-		<!--- Main Content Center --->
+		<!-- Main Content Center -->
+		
 		<div id="maincontent">
-			<img src="images/caladiums_470x315.jpg" alt="Caladiums" title="Caladiums"></a>
+		
+			<!--<iframe frameborder="0" scrolling="no" width="470" height="315"
+   			src="images/caladiums_470x315.jpg" name="imgbox" id="imgbox">
+			</iframe><br />
+			
+			<a href="images/caladiums_470x315.jpg" target="imgbox"><img src="images/caladiums_30x30.jpg"></a>
+ 			<a href="images/school_470x315.jpg" target="imgbox"><img src="images/school_30x30.jpg"></a>
+ 			<a href="images/fire_470x315.jpg" target="imgbox"><img src="images/fire_30x30.jpg"></a>
+ 			<a href="images/rooster_470x315.jpg" target="imgbox"><img src="images/rooster_30x30.jpg"></a>
+ 			<a href="images/canoes_470x315.jpg" target="imgbox"><img src="images/canoes_30x30.jpg"></a>-->
+			
+			<img src="images/caladiums_470x315.jpg" alt="Caladiums" title="Caladiums">
+			
 			<p>Caladiums from the Okeechobee Garden Club Show</p>
-		<article class="main">
-			<h1>What's New In Okeechobee</h1>
-				<h2>It’s Back To School Time For Students and Teachers</h2>
-					<a href="#"><img src="images/school_90x90.jpg" alt="Students and Teacher" title="Students and Teacher"></a>
-					<p>Be sure you check with your school for school policies and what students will need to be ready. <em>Mon, Aug 20th - All Day</em></p> 
-					<p><a href="#">Back To School ►</a></p>
-				<hr>
-				<h2>Burn Ban Issued For Okeechobee County</h2>
-					<a href="#"><img src="images/fire_90x90.jpg" alt="Burn Ban - No Fires" title="Burn Ban - No Fires"></a>
-					<p>Okeechobee County Commissioners have proclaimed a burn ban for Okeechobee County, which includes the entire city limits of Okeechobee City.</p> 
-					<p><a href="#">Burn Ban ►</a></p>
-				<hr>
-		</article>
+			
+			<div id="thumbnails">
+				<a href="images/caladiums_470x315.jpg"><img src="images/caladiums_30x30.jpg" alt="Click To See Caladiums" title="Click To See Caladiums"></a>
+				<a href="images/school_470x315.jpg"><img src="images/school_30x30.jpg" alt="Click To See Students" title="Click To See Students"></a>
+				<a href="images/fire_470x315.jpg"><img src="images/fire_30x30.jpg" alt="Click To See Fire" title="Click To See Fire"></a>
+				<a href="images/rooster_470x315.jpg"><img src="images/rooster_30x30.jpg" alt="Click To See Rooster" title="Click To See Rooster"></a>
+				<a href="images/canoes_470x315.jpg"><img src="images/canoes_30x30.jpg" alt="Click To See Canoes" title="Click To See Canoes"></a>
+			</div>
+			
+			<article>
+			
+				<h1>What's New In Okeechobee</h1>
+					<h2>It’s Back To School Time For Students and Teachers</h2>
+						<a href="#"><img src="images/school_90x90.jpg" alt="Students and Teacher" title="Students and Teacher"></a>
+						<p>Be sure you check with your school for school policies and what students will need to be ready. <em>Mon, Aug 20th - All Day</em></p> 
+						<p><a href="#">Back To School ►</a></p>
+					
+					<hr noshade>
+					
+					<h2>Burn Ban Issued For Okeechobee County</h2>
+						<a href="#"><img src="images/fire_90x90.jpg" alt="Burn Ban - No Fires" title="Burn Ban - No Fires"></a>
+						<p>Okeechobee County Commissioners have proclaimed a burn ban for Okeechobee County, which includes the entire city limits of Okeechobee City.</p> 
+						<p><a href="#">Burn Ban ►</a></p>
+					
+					<hr noshade>
+			
+			</article>
 		</div>
 		
-		<!--- Right Side Bar --->
+		<!-- Aside Right Side Bar -->
 		<div id="rightbar">
-			<div class="payments"><h3>Online Payments</h3></div>
-				<h4>Pay Bills Online</h4>
-				<h4>Register For Online Payments</h4>
-			<div class="weather"><h3>Weather</h3></div>
-				<h4>Today's Forecast</h4>
+			<aside class="right">
+			
+			<div class="payments">
+			<h3>Online Payments</h3>
+			</div>
+			
+				<h4><a href="#">Pay Bills Online</a></h4>
+				<h4><a href="#">Register For Online Payments</a></h4>
+			
+			<div class="weather">
+			<h3>Weather</h3>
+			</div>
+			
+				<h4 class="forcast">Today's Forecast</h4>
 				<p><em>Mostly Sunny</em></p>
 				<p class="temps">H: 100° | L: 84°</p>
+			
+			</aside>
 		</div>
 		
-		</div><!--- Whitebox Ends --->
+		</div><!-- Whitebox Ends -->
 				
-		<!--- Footer --->
+		<!-- Footer -->
+		<div id="footer">
 		<footer>
 			<div id="footernav">
 				<ul>
@@ -99,17 +138,20 @@
 					<li><a href="contacts.html">Contacts</a></li>
 				</ul>
 				<p>City Hall, 55 SE 3rd Avenue, Okeechobee, FL 34974  |  Phone: 863-763-3372  |  Fax:  863-763-1686</p>
-			</div>
+			</div><!-- End Footernav -->
 			<div id="socialnetworks">
-				<p>SOCIAL NETWORKS:</p>
-				<a href="#"><img src="images/facebook_27x27.png" alt="Like Us On Facebook" title="Like Us On Facebook"></a>
-				<a href="#"><img src="images/twitter_27x27.png" alt="Follow Us On Twitter" title="Follow Us On Twitter"></a>
-			</div>
+				<ul>
+					<li>SOCIAL NETWORKS:</li>
+					<li><a href="#"><img src="images/facebook_27x27.png" alt="Like Us On Facebook" title="Like Us On Facebook"></a></li>
+					<li><a href="#"><img src="images/twitter_27x27.png" alt="Follow Us On Twitter" title="Follow Us On Twitter"></a></li>
+				</ul>
+			</div><!-- End Socialnetworks -->
 			<div id="copyright">
-			<hr>
-			<p>&copy; 2012 City of Okeechobee. All Rights Reserved.</p>
+				<hr noshade>
+				<p>&copy; 2012 City of Okeechobee. All Rights Reserved.</p>
 			</div>
 		</footer>
+		</div>
 	
 	</body>
 	</div>

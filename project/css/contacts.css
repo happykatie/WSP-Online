@@ -58,14 +58,30 @@ table {
 
 
 
-container{
-	
-}
+/* 
+------------ COLOR PALLET ------------ 
+Dark Blue: #003366;
+Dark Red: #9e2a0b;
+Light Tan: #f1eedd;
+Nav Medium Tan: #d4ab6a;
+Text Dark Tan: #b28835;
+Text Gray: #636363;
+Light Gray: #dedede;
+Payments Text Green: #76943e;
+Payments Bar Green: #e3f2c7;
+Weather Bar Red: #f8cbbd;
+--------------------------------------
+*/
+
+/*container{
+	width: 80%; /*960px/1200px;*/
+	/*background-color: #fff;
+}*/
 
 body{
 	font: 13px/1.5 arial, sans-serif; /*14px*/
 	color: #636363;
-	max-width: 960px;
+	max-width: 960px; /*80%; /*960px/1200px*/
 	height: 100%;
 	margin: 0% auto;
 	padding: 0%;
@@ -76,31 +92,38 @@ body{
 
 #whitebox{
 	background-color: #fff;
-	width: 960px;
+	width: 960px; /*100%; /*960px/960px*/
 	position: relative;
-	top: 11px;
+	top: 11px; /*1.145833333333%; 11px/960px*/
+	box-shadow: 0px 0px 3px #dedede;
+	overflow: auto;
 }
 
 a{
-	color: 003366;
+	color: #003366;
 	text-decoration: none;
-	padding: 0px 0px 0px 5px;
+	padding: 0%;
 }
 
 
 /* --- Header --- */
 
-#seal{
-	padding: 12px 20px 0px 10px;
-	display: inline;
-	float: left;
+header{
+	width: 960px; /*100%; /*960*/
+	padding: 12px 0% 0% 10px; /*1.25% 0% 0% 1.041666666667%; /*12px 0px 0px 10px /960px*/
 }
 
 header h1{
 	font: 44px palatino, serif; /*px*/
 	color: #fff;
 	display: inline;
-	padding: 30px 0px 0px 0px;
+	padding: 18px 0% 0% 0%; /*1.875% 0% 0% 0%; /*18px 0px 0px 0px /960px*/
+	float: left;
+}
+
+#seal{
+	padding: 0% 20px 0% 0%; /*2.083333333333% / 0px 20px 0px 0px /960px*/
+	display: inline;
 	float: left;
 }
 
@@ -109,10 +132,10 @@ header h1{
 /* --- Navigation --- */
 
 nav{
-	width: 940px; /*px*/
+	width: 940px; /*97.916666666667% / 940px/960px*/
 	float: left;
-	margin: 0px 10px;
-	padding: 0;
+	margin: 0% 10px; /*1.041666666667% / 0px 10px /960px*/
+	padding: 0%;
 	list-style: none;
 	background-color: #d4ab6a;
 	position: relative;
@@ -122,14 +145,14 @@ nav{
 }
 
 nav ul{
-	width: 840px;
-	margin: 0% 50px;
+	width: 840px; /*89.36170212766%; / 840px/960px*/
+	margin: 0% 50px; /*5.208333333333% / 0% 50px/960px*/
 	padding: 0%;
 	overflow: hidden;
 }
 
 nav ul li{
-	width: 140px;
+	width: 140px; /*16.666666666667% / 140px/840px*/
 	display: inline;
 	float: left;
 }
@@ -142,7 +165,6 @@ nav li a{
 	color:#fff;
 	text-shadow: 1px 1px 1px #b28835;
 	font: 18px palatino, serif; /*px*/
-	text-decoration: none;
 	text-align: center;
 }
 
@@ -185,20 +207,21 @@ nav li a:active{
 #maincontent{
 	background-color: #fff;
 	float: left;
-	width: 700px;
+	width: 700px; /*72.916666666667% / 700px/960px*/
+	height: 100%;
 	margin: 0 auto;
-	padding: 20px;
-	box-shadow: 3px 0px 3px #dfdfdf;
+	padding: 20px; /*2.083333333333% / 20px/960px*/
+	box-shadow: 3px 0px 3px #dedede;
 }
 
-.main h1{
+article h1{
 	font-size: 18px;
 	font-family: arial, sans-serif;
 	font-weight: bold;
 	color: #000;
 }
 
-.main h2{
+article h2{
 	font-size: 16px;
 	font-family: Palatino, serif;
 	font-weight: bold;
@@ -206,10 +229,16 @@ nav li a:active{
 	padding: 10px 0px 0px 0px;
 }
 
-.main h3{
+article h3{
 	font-size: 14px;
 	color: #000;
 	padding: 10px 0px 0px 0px;
+}
+
+hr{
+	width: 600px;
+	color: #dedede;
+	float: left;
 }
 
 
@@ -217,14 +246,12 @@ nav li a:active{
 /* --- Form --- */
 
 input{
-	margin: 10px;
-	background-color: #f1eedd;
-	border: 1px solid #dfdfdf;
-}
-
-input.text{
 	width: 250px;
 	height: 20px;
+	font-size: 12px;
+	margin: 10px;
+	background-color: #f1eedd;
+	border: 1px solid #dedede;
 }
 
 label{
@@ -235,22 +262,34 @@ label{
 }
 
 select{
+	width: 250px;
+	height: 20px;
+	font-size: 12px;
+	background-color: #f1eedd;
+	border: 1px solid #dedede;
 	margin: 10px;
 	display: inline;	
 }
 
 textarea{
+	width: 490px;
+	height: 120px;
 	background-color: #f1eedd;
-	border: 1px solid #dfdfdf;
+	border: 1px solid #dedede;
 	margin: 10px;
 }
 
+textarea:focus, input:focus{
+	border: 1px solid #003366;
+}
+
 button{
+	width: 125px;
 	color: #fff;
 	font-weight: bold;
 	font-size: 14px;
 	font-family: palatino, serif;
-	margin: 0px;
+	margin: 10px 0px 20px;
 	padding: 5px 10px;
 	height: 35px;
 	border: 1px solid #9e2a0b; 
@@ -260,16 +299,16 @@ button{
 table{
 	border-collapse: collapse;
 	border: none;
-	box-shadow: 0px 0px 5px #dfdfdf;
+	box-shadow: 0px 0px 5px #dedede;
 	background-color: #fff;
-	margin: 20px;
+	margin: 20px 0px 20px 0px;
 	width: 600px;
 	float: left;
 }
 
 td {
 	font-size: 12px;
-	color: 636363;
+	color: #636363;
 	border: none;
 	padding: 0.4em 0em 0.4em 1em;
 }
@@ -289,45 +328,50 @@ th {
 
 
 
-/* --- Right Side Bar --- */
+/* --- Aside Right Side Bar --- */
 
-#rightbar{
-	background-color: #fff;
+#aside{
+	background-color: none;
 	float: right;
-	max-width: 220px;
-	text-align: left;
+	width: 220px; /*22.91666666667% / 220px/960px*/
+	height: 100%;
 }
 
-#rightbar h4{
-	padding: 0px 20px 0px 10px;
+aside h4{
+	padding: 0px 20px 0px 10px;/*0% 2.083333333333% 0% 1.041666666667%; /*0px 20px 0px 10px /960px*/
 }
 
-#rightbar p{
-	padding: 0px 20px 0px 10px;
+aside p{
+	font-size: 12px;
+	padding: 0px 20px 0px 10px;/*0% 2.083333333333% 0% 1.041666666667%; /*0px 20px 0px 10px /960px*/
 }
 
 .payments{
 	background-color: #e3f2c7;
-	margin: 20px 0px 5px 0px;
-	width: 220px;
+	margin: 20px 0px 5px 0px; /*9.090909090909% 0% 2.272727272727% 0%; /220px*/
+	width: 100%; /*220px/220px*/
 }
 
 .payments h3{
 	color: #76943e;
 	font-size: 16px;
-	padding: 0px 20px 0px 10px;
+	padding: 0px 20px 0px 10px; /*0% 9.090909090909% 0% 4.545454545455%; /220px*/
 }
 
 .weather{
 	background-color: #f8cbbd;
-	margin: 20px 0px 5px 0px;
-	width: 220px;
+	margin: 20px 0px 5px 0px; /*9.090909090909% 0% 2.272727272727% 0%; /220px*/
+	width: 220px; /*100%; /220px*/
 }
 
 .weather h3{
 	color: #9e2a0b;
 	font-size: 16px;
-	padding: 0px 20px 0px 10px;
+	padding: 0px 20px 0px 10px; /*0% 9.090909090909% 0% 4.545454545455%;/* /220px*/
+}
+
+.forcast{
+	color: #000;
 }
 
 .temps{
@@ -340,33 +384,38 @@ th {
 
 /* --- Footer --- */
 
+/*#footer{
+	width: 960px;
+	background-color: #fff;
+}*/
+
 footer{
 	color: #fff;
 	text-align: center;
-	width: 940px;
-	padding: 10px;
+	width: 940px; /*97.916666666667%; /*940px/960px*/
+	padding: 20px 10px; /*2.127659574468% 1.063829787234%; /940px*/
 	clear: both;
 	background-color: #003366;
-	background-repeat: repeat-x;
 	position: relative;
-	top: 9px;
+	top: 9px; /*0.957446808511%; /*9px/940px*/
 }
 
 footer ul{
-	width: 720px;
+	width: 730px; /*100%; /*78.191489361702%; /*735px/940px*/
 	margin: 0% 0%;
 	padding: 0%;
 	overflow: hidden;
+	float: left;
 }
 
 footer ul li{
 	display: inline;
 	float: left;
+	padding: 0px 15px 15px 0px; /*0% 1.595744680851% 1.595744680851% 0%; /940px*/
 }
 
 footer li a{
 	display: block;
-	padding: 10px 15px 10px 0px;
 	text-decoration: none;
 	color:#fff;
 	font: 13px palatino, serif;
@@ -380,25 +429,45 @@ footer li a{
 
 #socialnetworks{
 	float: right;
-	width: 220px;
+	width: 210px; /*22.340425531915%; /*210px/940px*/ /*21.808510638298%; 205px/940px*/
 	display: inline;
 	text-align: left;
+}
+
+#socialnetworks ul li{
+	display: inline;
+	float: left;
+	padding: 0px 10px 0px 0px; /*0% 1.063829787234% 0% 0%; /*0px 10px 0px 0px /940px*/
+	font: 13px palatino, serif;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#socialnetworks li a{
+	display: block;
 }
 
 footer p{
 	color: #fff;
 	font: 13px palatino, serif;
 	text-align: left;
-	padding: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px; /*0% 0% 1.063829787234% 0%; /*0px 0px 10px 0px /940px*/
+}
+
+footer hr{
+	color: #d4ab6a;
+	background-color: #d4ab6a;
+	width: 100%;
 }
 
 #copyright{
 	clear: both;
-	max-width: 940px;
+	width: 100%;
 }
 
 #copyright p{
 	font-family: arial, sans-serif;
 	font-size: 12px;
 	text-align: center;
+	padding: 10px 0px; /*1.063829787234% 0%; /*10px 0px /940px*/
 }
