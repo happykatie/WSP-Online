@@ -8,36 +8,52 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta charset="utf-8"/>
 		<title>Contacts | City of Okeechobee</title>
-		<link rel="stylesheet" href="css/contacts.css">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	
 	<div id="container">
 		
 	<body>
 		
-			<header>
-				<div id="seal"><a href="index.html"><img src="images/okeechobeeseal_80x78.png" alt="City of Okeechobee Home Page" title="City of Okeechobee"></a></div>
-				<h1>City of Okeechobee</h1>
-			</header>
+		<header>
+			<div id="seal">
+				<a href="index.html"><img src="images/okeechobeeseal_80x78.png" alt="City of Okeechobee Home Page" title="City of Okeechobee"></a>
+			</div>
+			<h1>City of Okeechobee</h1>
+				
+			<div id="search">
+				<form class="search" action="http://www.google.com/cse" name="search" target="_blank">
+						
+					<label for="search"></label>
+    				<input type="text" name="search" placeholder="Search"/>
+
+					<div>
+						<button type="search" name="search" class="searchbutton">GO</button>
+					</div>
+
+				</form>
+			</div>
+				
+		</header>
 		
-			<!-- Navigation -->
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="events.html">Events</a></li>
-					<li><a href="community.html">Community</a></li>
-					<li><a href="government.html">Government</a></li>
-					<li><a href="departments.html">Departments</a></li>
-					<li class="contacts"><a href="contacts.html">Contacts</a></li>
-				</ul>
-			</nav>
+		<!-- Navigation -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="community.html">Community</a></li>
+				<li><a href="government.html">Government</a></li>
+				<li><a href="departments.html">Departments</a></li>
+				<li class="contacts"><a href="contacts.html">Contacts</a></li>
+			</ul>
+		</nav>
 			
 		<div id="whitebox">
 		
 		<!-- Main Content Center -->
-		<div id="maincontent">
+		<div id="contact_main">
 		
-		<article>
+		<article class="contact">
 			<h1>How to Contact the City of Okeechobee</h1>
 				<h2>Okeechobee City Hall</h2>
 					<p>Phone: (863) 763-3372</p>
@@ -45,9 +61,10 @@
 					<p>Hours: 8 a.m. to 5 p.m. - Monday-Friday - excluding holidays</p>
 				<h2>Contacting City Departments</h2>
 					<p>Fill out the following online form or select a phone number from the contact list below.</p>
+				
 				<h3>Send Us A Message</h3>
 					<!-- Form -->
-					<form method="get" action="mailto:katieroberts@fullsail.com" class="contact">
+					<form method="post" action="mailto:katieroberts@fullsail.com" class="contact">
 						
 						<div>
 							<label for="firstname">First Name:</label>
@@ -81,7 +98,7 @@
 						
 						<div>
 							<label for="message">Message:</label>
-							<textarea rows="7" cols="60" id="message"></textarea>
+							<textarea rows="9" cols="60" id="message"></textarea>
 						</div>	
 						
 						<div>
@@ -145,7 +162,7 @@
 					<td>863-763-1686</td>
 				</tr>
 				<tr class="odd_row">
-					<td>Parks & Recreation</td>
+					<td>Parks and Recreation</td>
 					<td>John Smith</td>
 					<td>863-763-6950</td>
 					<td>863-763-0662</td>
@@ -161,18 +178,17 @@
 
 		</div>
 		
-		<!-- Aside - Right Side Bar -->
-		<div id="aside">
-		
-		<aside>
-		
+		<!-- Aside Right Side Bar -->
+		<div id="rightbar">
+			<aside class="right">
+			
 			<div class="payments">
 			<h3>Online Payments</h3>
 			</div>
 			
 				<h4><a href="#">Pay Bills Online</a></h4>
 				<h4><a href="#">Register For Online Payments</a></h4>
-				
+			
 			<div class="weather">
 			<h3>Weather</h3>
 			</div>
@@ -180,8 +196,8 @@
 				<h4 class="forcast">Today's Forecast</h4>
 				<p><em>Mostly Sunny</em></p>
 				<p class="temps">H: 100° | L: 84°</p>
-		
-		</aside>
+			
+			</aside>
 		</div>
 		
 		</div><!-- Whitebox Ends -->
@@ -189,6 +205,7 @@
 		<!-- Footer -->
 		<div id="footer">
 		<footer>
+			
 			<div id="footernav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -200,6 +217,7 @@
 				</ul>
 				<p>City Hall, 55 SE 3rd Avenue, Okeechobee, FL 34974  |  Phone: 863-763-3372  |  Fax:  863-763-1686</p>
 			</div><!-- End Footernav -->
+			
 			<div id="socialnetworks">
 				<ul>
 					<li>SOCIAL NETWORKS:</li>
@@ -207,10 +225,12 @@
 					<li><a href="#"><img src="images/twitter_27x27.png" alt="Follow Us On Twitter" title="Follow Us On Twitter"></a></li>
 				</ul>
 			</div><!-- End Socialnetworks -->
+			
 			<div id="copyright">
-				<hr>
+				<hr noshade>
 				<p>&copy; 2012 City of Okeechobee. All Rights Reserved.</p>
 			</div>
+		
 		</footer>
 		</div>
 	

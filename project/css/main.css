@@ -52,9 +52,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* ------------ END OF CSS RESET ------------ */
-/* ------------ END OF CSS RESET ------------ */
-/* ------------ END OF CSS RESET ------------ */
+/* ------------ END OF CSS RESET --------------------------------------------------- */
+
 
 
 
@@ -105,7 +104,7 @@ a{
 }
 
 
-/* --- Header --- */
+/* --- Header --------------------------------------------------- */
 
 header{
 	width: 960px;
@@ -120,6 +119,52 @@ header h1{
 	float: left;
 }
 
+#search{
+	width: 220px;
+	float: right;
+	border-collapse: collapse;
+	border: none;
+	margin: 0%;
+}
+
+header input{
+	width: 150px;
+	height: 20px;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	padding: 0px 0px 0px 5px;
+	background-color: #fff;
+	border: 1px solid #dedede;
+	box-shadow: 0 3px 5px #dedede inset;
+	float: left;
+}
+
+header button{
+	display: inline;
+	background-color: #d4ab6a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d4ab6a), to(#b28835));
+    background: -webkit-linear-gradient(top, #d4ab6a, #b28835);
+    background: -moz-linear-gradient(top, #d4ab6a, #b28835);
+    background: -ms-linear-gradient(top, #d4ab6a, #b28835);
+    background: -o-linear-gradient(top, #d4ab6a, #b28835);
+    background: linear-gradient(top, #d4ab6a, #b28835);
+    border: 1px solid #b28835;
+    border-bottom: 1px solid #d4ab6a;
+	width: 30px;
+	height: 22px;
+	float: left;
+	margin: 0px 10px;
+	background-color: #d4ab6a;
+}
+
+.searchbutton{
+	color: #fff;
+	font-family: palatino, serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+
 #seal{
 	padding: 0px 20px 0px 0px;
 	display: inline;
@@ -128,7 +173,7 @@ header h1{
 
 
 
-/* --- Navigation --- */
+/* --- Navigation --------------------------------------------------- */
 
 nav{
 	width: 940px; /*px*/
@@ -237,7 +282,7 @@ nav li a:active{
 
 
 
-/* --- Aside Left Side Bar --- */
+/* --- Aside Left Side Bar --------------------------------------------------- */
 #leftbar{
 	background-color: #fff;
 	float: left;
@@ -282,7 +327,7 @@ aside hr{
 
 
 
-/* --- Main Content Center --- */
+/* --- Main Content Center --------------------------------------------------- */
 
 #maincontent{
 	background-color: #fff;
@@ -336,7 +381,132 @@ article hr{
 
 
 
-/* --- Aside Right Side Bar --- */
+/* --- Contacts Page --------------------------------------------------- */
+
+#contact_main{
+	background-color: #fff;
+	float: left;
+	width: 740px; /*72.916666666667% / 700px/960px*/
+	height: 100%;
+	margin: 0 auto;
+	padding: 0px; /*2.083333333333% / 20px/960px*/
+	box-shadow: 3px 0px 3px #dedede;
+}
+
+.contact h1{
+	font-size: 18px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	color: #000;
+}
+
+.contact h2{
+	font-size: 16px;
+	font-family: Palatino, serif;
+	font-weight: bold;
+	color: #9e2a0b;
+	padding: 10px 0px 0px 0px;
+}
+
+.contact h3{
+	font-size: 14px;
+	color: #000;
+	padding: 10px 0px 0px 0px;
+}
+
+#contact_main hr{
+	width: 600px;
+	height: 1px;
+	color: #dedede;
+	margin: 10px 20px;
+	float: left;
+}
+
+/* --- Form --- */
+
+.contact input{
+	width: 250px;
+	height: 20px;
+	font-size: 12px;
+	margin: 10px;
+	background-color: #f1eedd;
+	border: 1px solid #dedede;
+}
+
+.contact label{
+	display: block;
+	width: 100px;
+	float: left;
+	padding: 5px 0px;
+}
+
+.contact select{
+	width: 250px;
+	height: 20px;
+	font-size: 12px;
+	background-color: #f1eedd;
+	border: 1px solid #dedede;
+	margin: 10px;
+	display: inline;	
+}
+
+.contact textarea{
+	width: 490px;
+	height: 120px;
+	background-color: #f1eedd;
+	border: 1px solid #dedede;
+	margin: 10px;
+}
+
+.contact textarea:focus, input:focus{
+	border: 1px solid #003366;
+}
+
+.contact button{
+	width: 125px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: palatino, serif;
+	margin: 10px 0px 20px;
+	padding: 5px 10px;
+	height: 35px;
+	border: 2px solid #9e2a0b; 
+	background-image: url('../images/navselector_10x35.png');	
+}
+
+table{
+	border-collapse: collapse;
+	border: none;
+	box-shadow: 0px 0px 5px #dedede;
+	background-color: #fff;
+	margin: 20px 0px 40px 20px;
+	width: 600px;
+	float: left;
+}
+
+td{
+	font-size: 12px;
+	color: #636363;
+	border: none;
+	padding: 0.4em 0em 0.4em 1em;
+}
+
+th{
+	text-align: left;
+	background-color: #003366;
+	padding: 5px;
+	color: #fff;
+	padding: 0.4em 0em 0.4em 1em;
+}
+
+tr:nth-child(odd){
+	background-color: #f1eedd;
+}
+
+
+
+/* --- Aside Right Side Bar --------------------------------------------------- */
 
 #rightbar{
 	background-color: none;
@@ -391,12 +561,7 @@ article hr{
 
 
 
-/* --- Footer --- */
-
-/*#footer{
-	width: 960px;
-	background-color: #fff;
-}*/
+/* --- Footer --------------------------------------------------- */
 
 footer{
 	color: #fff;
