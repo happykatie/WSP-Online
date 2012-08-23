@@ -74,6 +74,7 @@ Weather Bar Red: #f8cbbd;
 container{
 	max-width: 100%; /*960px/1200*/
 	background-color: #fff;
+	overflow: hidden;
 }
 
 body{
@@ -94,7 +95,7 @@ body{
 	position: relative;
 	top: 5px;
 	box-shadow: 0% 0% 3px #dedede;
-	overflow: auto;
+	overflow: hidden;
 }
 
 a{
@@ -585,7 +586,7 @@ footer{
 	clear: both;
 	background-color: #003366;
 	position: relative;
-	top: 9px; /*0.957446808511%; /*9px/940px*/
+	top: 5px; /*5px/940px*/
 }
 
 footer ul{
