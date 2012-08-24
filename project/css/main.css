@@ -61,6 +61,8 @@ table {
 ------------ COLOR PALLET ------------ 
 Dark Blue: #003366;
 Dark Red: #9e2a0b;
+Dark Red Shadow: #922309;
+Weather Bar Red: #f8cbbd;
 Light Tan: #f1eedd;
 Nav Medium Tan: #d4ab6a;
 Text Dark Tan: #b28835;
@@ -68,14 +70,7 @@ Text Gray: #636363;
 Light Gray: #dedede;
 Payments Text Green: #76943e;
 Payments Bar Green: #e3f2c7;
-Weather Bar Red: #f8cbbd;
 */
-
-container{
-	max-width: 100%; /*960px/1200*/
-	background-color: #fff;
-	overflow: hidden;
-}
 
 body{
 	font: .813em/1.5 arial, sans-serif; /*13px*/
@@ -92,10 +87,8 @@ body{
 #whitebox{
 	background-color: #fff;
 	width: 100%; /*960px*/
-	position: relative;
-	top: 5px;
-	box-shadow: 0% 0% 3px #dedede;
 	overflow: hidden;
+	border-top: 5px solid #9e2a0b;
 }
 
 a{
@@ -131,7 +124,7 @@ header h1{
 
 header input{
 	width: 68.181818181818%; /*150px/220px*/
-	height: 11.363636363636%; /*25px/220px*/
+	height: 18px;
 	font-family: arial, sans-serif;
 	font-size: 1em; /*13px*/
 	padding: 0px 0px 0px 5px;
@@ -153,18 +146,18 @@ header button{
     border: 1px solid #b28835;
     border-bottom: 1px solid #d4ab6a;
 	width: 13.636363636364%; /*30px/220px*/
-	height: 11.363636363636%; /*25px/220px*/
+	height: 20px;
 	float: left;
 	margin: 0% 4.545454545455%; /*10px/220px*/
-	background-color: #d4ab6a;
 }
 
-.searchbutton{
+.search{
 	color: #fff;
 	font-family: palatino, serif;
-	font-size: 1em; /*13px*/
+	font-size: 0.923em; /*12px*/
 	font-weight: bold;
 	text-align: center;
+	padding: 0 3px;
 }
 
 #seal{
@@ -188,8 +181,6 @@ nav{
 	padding: 0%;
 	list-style: none;
 	background-color: #d4ab6a;
-	position: relative;
-	top: 0.625%; /*14.0625%; /*135px/960px; 0.625%; /*6px/960px*/
 	background-image: url('../images/navbarbg_10x35.jpg');
 	background-repeat: repeat-x;
 }
@@ -223,66 +214,66 @@ nav li a{
 /* --- Navigation Selector --- */
 .home{
 	color: #fff;
-	text-shadow: 1px 1px 1px #9e2a0b;
+	text-shadow: 1px 1px 1px #922309;
 	background-color: #9e2a0b; 
-	background-image: url('../images/navselector_10x35.png');
+	background-image: url('../images/navselector_10x35.gif');
 	background-repeat: repeat-x;
 }
 
 .events{
 	color: #fff;
-	text-shadow: 1px 1px 1px #9e2a0b;
+	text-shadow: 1px 1px 1px #922309;
 	background-color: #9e2a0b; 
-	background-image: url('../images/navselector_10x35.png');
+	background-image: url('../images/navselector_10x35.gif');
 	background-repeat: repeat-x;
 }
 
 .community{
 	color: #fff;
-	text-shadow: 1px 1px 1px #9e2a0b;
+	text-shadow: 1px 1px 1px #922309;
 	background-color: #9e2a0b; 
-	background-image: url('../images/navselector_10x35.png');
+	background-image: url('../images/navselector_10x35.gif');
 	background-repeat: repeat-x;
 }
 
 .government{
 	color: #fff;
-	text-shadow: 1px 1px 1px #9e2a0b;
+	text-shadow: 1px 1px 1px #922309;
 	background-color: #9e2a0b; 
-	background-image: url('../images/navselector_10x35.png');
+	background-image: url('../images/navselector_10x35.gif');
 	background-repeat: repeat-x;
 }
 
 .departments{
 	color: #fff;
-	text-shadow: 1px 1px 1px #9e2a0b;
+	text-shadow: 1px 1px 1px #922309;
 	background-color: #9e2a0b; 
-	background-image: url('../images/navselector_10x35.png');
+	background-image: url('../images/navselector_10x35.gif');
 	background-repeat: repeat-x;
 }
 
 .contacts{
 	color: #fff;
-	text-shadow: 1px 1px 1px #9e2a0b;
+	text-shadow: 1px 1px 1px #922309;
 	background-color: #9e2a0b; 
-	background-image: url('../images/navselector_10x35.png');
+	background-image: url('../images/navselector_10x35.gif');
 	background-repeat: repeat-x;
 }
 
 /* --- Navigation State --- */
 nav li a:hover{ 
 	color: #fff;
-	text-shadow: 1px 1px 1px #9e2a0b;
+	text-shadow: 1px 1px 1px #922309;
 	background-color: #9e2a0b; 
-	background-image: url('../images/navselector_10x35.png');
+	background-image: url('../images/navselector_10x35.gif');
 	background-repeat: repeat-x;
 }
 
 nav li a:active{ 
 	color: #fff; 
-	text-shadow: 1px 1px 1px #9e2a0b;
+	text-shadow: 1px 1px 1px #922309;
 	background-color: #9e2a0b; 
-	background-image: url('../images/navselector_10x35.png');
+	background-image: url('../images/navselector_10x35.gif');
 	background-repeat: repeat-x;
 }
 
@@ -328,6 +319,7 @@ aside p{
 aside hr{
 	color: #dedede;
 	background-color: #dedede;
+	border: #dedede;
 	height: 1px;
 	margin: 4.761904761905% 0% 4.761904761905% 0%; /*10px 0px 10px 0px / 210px*/
 }
@@ -388,6 +380,7 @@ article img{
 article hr{
 	color: #dedede;
 	background-color: #dedede;
+	border: #dedede;
 	height: 1px;
 	margin: 8.510638297872% 0% 2.127659574468% 0%; /*40px 10px/470px*/
 }
@@ -431,8 +424,9 @@ article hr{
 	width: 81.081081081081%; /*600px/740px*/
 	height: 1px;
 	color: #dedede;
+	background-color: #dedede;
+	border: #dedede;
 	margin: 1.351351351351% 2.702702702703%; /*10px 20px/740px*/
-	float: left;
 }
 
 /* --- Form --- */
@@ -489,6 +483,10 @@ article hr{
 	background-color: #9e2a0b;
 }
 
+#table{
+	background-color: #fff;
+}
+
 table{
 	border-collapse: collapse;
 	border: none;
@@ -523,7 +521,6 @@ tr:nth-child(odd){
 /* --- Aside Right Side Bar --------------------------------------------------- */
 
 #rightbar{
-	background-color: none;
 	float: right;
 	width: 22.916666666667%; /*220px/960px*/
 	height: 100%;
@@ -585,12 +582,10 @@ footer{
 	padding: 2.127659574468% 1.063829787234%; /*20px 10px;/940px*/
 	clear: both;
 	background-color: #003366;
-	position: relative;
-	top: 5px; /*5px/940px*/
 }
 
 footer ul{
-	width: 77.659574468085%; /*730px/940px*/
+	width: 90%; /*77.659574468085%; /*730px/940px*/
 	margin: 0% 0%;
 	padding: 0%;
 	overflow: hidden;
@@ -613,7 +608,7 @@ footer li a{
 }
 
 #footernav{
-	width: 77.659574468085%; /*730px/940px*/
+	width: 75%; /*77.659574468085%; /*730px/940px*/
 	float: left;
 }
 
@@ -624,10 +619,12 @@ footer li a{
 	text-align: left;
 }
 
+#socialnetworks ul{
+	width: 100%;
+}
+
 #socialnetworks ul li{
 	display: inline;
-	float: left;
-	padding: 0% 4.761904761905% 0% 0%; /*10px/210px*/
 	font: 1em palatino, serif; /*13px*/
 	text-align: right;
 	text-transform: uppercase;
@@ -639,24 +636,27 @@ footer li a{
 
 footer p{
 	clear: both;
+	width: 100%;
 	color: #fff;
 	font: 1em palatino, serif; /*13px*/
 	text-align: left;
-	padding: 0% 0% 1.063829787234% 0%; /*0px 0px 10px 0px /940px*/
+	padding: 0 0 1.063829787234% 0; /*0px 0px 10px 0px /940px*/
 }
 
 footer hr{
 	color: #d4ab6a;
 	background-color: #d4ab6a;
+	border: #d4ab6a;
+	height: 2px;
 	width: 100%;
 }
 
-#copyright{
+footer #copyright{
 	clear: both;
 	width: 100%;
 }
 
-#copyright p{
+footer #copyright p{
 	font-family: arial, sans-serif;
 	font-size: 0.923em; /*12px*/
 	text-align: center;
@@ -674,7 +674,7 @@ footer hr{
 
 		header{ height: auto; background-color: #003366; background-image: none; }
 		
-		header h1{ font-size: 1.846em; padding: 18px 0px 0px 0px; } /*24px/13px*/
+		header h1{ font-size: 2.308em; padding: 18px 0px 0px 0px; } /*30px/13px*/
 		
 		#search{ float: none; width: 100%; margin: 20px 0%; }
 		
@@ -694,20 +694,19 @@ footer hr{
 		
 		h5{ font-size: 0.923em; /*12px/13px*/ }
 		
-		nav{ position: relative; top: 80px; width: 100%; height: 25px; background-image: none; background-color: #d4ab6a; margin: 0%; }
+		#whitebox{ padding: 0 0 20px 0; }
 		
-		nav ul{ width: 100%; padding: 0%; }
+		nav{ clear: both; width: 100%; height: 25px; background-image: none; background-color: #d4ab6a; margin: 20px 0 0 0; }
 		
-		nav li a{ font-size: 1em; padding: 5px; }
+		nav ul{ width: 100%; padding: 0;}
+		
+		nav li a{ font-size: 0.769em; /*10px*/ text-transform: uppercase; font-weight: bold; padding: 5px; }
 		
 		.home, .events, .community, .government, .departments, .contacts{ background-image: none; height: 25px; }
 		
-		nav li a:hover{ background-image: none; height: 25px; }
+		nav li a:hover{ background-image: none; height: 18px; }
 
-		nav li a:active{ background-image: none; height: 25px; }
-
-		
-		#whitebox{ position: relative; top: 20px; }
+		nav li a:active{ background-image: none; height: 18px; }
 
 		body, p{ font-family: 0.846em/1.5 arial, sans-serif; }
 		
@@ -717,7 +716,7 @@ footer hr{
 		
 		#leftbar{ display: none; }
 		
-		#maincontent{ margin: 0% auto; }
+		#maincontent{ margin: 0 auto; }
 				
 		article{ padding-right: 20px; }
 		
@@ -767,7 +766,9 @@ footer hr{
 		
 		body, p{ font-family: 0.846em/1.5 arial, sans-serif; }
 		
-		nav{ position: relative; top: 85px; width: 100%; height: 30px; background-color: #d4ab6a; margin: 0%; }
+		#whitebox{ padding: 0 0 20px 0; }
+		
+		nav{ clear: both; width: 100%; height: 30px; background-color: #d4ab6a; margin: 0%; }
 		
 		nav ul{ width: 100%; padding: 0%; }
 		
@@ -775,21 +776,21 @@ footer hr{
 		
 		.home, .events, .community, .government, .departments, .contacts{ height: 30px; }
 		
-		nav li a:hover{ background-image: none; height: 30px; }
+		nav li a:hover{ background-image: none; height: 25px; }
 
-		nav li a:active{ height: 30px; }
-		
-		#whitebox{ position: relative; top: 30px; }
+		nav li a:active{ height: 25px; }
 		
 		.caption, #thumbnails img{ display: none; }
 		
-		#maincontent, #contact_main{ width: 60%; }
+		#maincontent{ width: 65%; } /*470/725*/
+		
+		#contact_main{ width: 64%; } /*470/725*/
 		
 		#leftbar{ display: none; }
 		
-		#maincontent{ margin: 0%; padding-left: 20px;}
+		#maincontent{ margin: 0; padding-left: 20px;}
 		
-		article{ margin: 0 auto; padding: 0%; }
+		article{ margin: 0 auto; padding: 0; }
 		
 		#contact_main{ padding: 0px 20px; }
 		
@@ -807,11 +808,11 @@ footer hr{
 		
 		table{ width: 100%; font-size: 0.923em; margin: 10px 20px 30px 0px; }
 		
-		#rightbar{ width: 30%; margin: 0%; }
+		#rightbar{ margin: 0; width: 30%; } /*255/725*/
 		
 		#rightbar .payments, #rightbar .weather{ margin: 20px 0px 10px; }
 		
-		#footernav, #socialnetworks{ width: 100%; float: none; margin: 5px 0px; }
+		#footernav, #socialnetworks{ width: 100%; clear: both; margin: 5px 0px; }
 }
 	
 
