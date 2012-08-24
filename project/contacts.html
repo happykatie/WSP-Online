@@ -4,15 +4,23 @@
 	<head>
 		<meta name="author" content="Katie Roberts"/>
 		<meta name="description" content="City of Okeechobee, Florida"/>
-		<meta name="keywords" content="City of Okeechobee, Florida, Okeechobee, City of Okeechobee, Okeechobee County, Events, Community, Government, Departments, Contacts"/>
+		<meta name="keywords" content="City of Okeechobee, Florida, Okeechobee, Okeechobee County, Lake Okeechobee, Events, Community, Government, Departments, Contacts, Okeechobee City Hall, City Departments"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta charset="utf-8"/>
 		<title>Contacts | City of Okeechobee</title>
+		
+		<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+
 		<link rel="stylesheet" href="css/main.css">
+		
+		<!--[if lt IE 9]>
+		<script src="dist/html5shiv.js"></script>
+		<![endif]-->
+		
 	</head>
 	
-	<div id="container">
-		
 	<body>
 		
 		<header>
@@ -28,7 +36,7 @@
     				<input type="text" name="search" placeholder="Search"/>
 
 					<div>
-						<button type="search" name="search" class="searchbutton">GO</button>
+						<button type="search" name="search" class="search">GO</button>
 					</div>
 
 				</form>
@@ -108,10 +116,10 @@
 					</form>
 		</article>
 		
-		<hr noshade>
+		<hr>
 		
 		<!-- Table -->
-		<section>
+		<div id="table">
 			<table summary="City of Okeechobee Department Contact List">
 				<tr>
 					<th>City Department</th>
@@ -174,28 +182,28 @@
 					<td>863-763-7804</td>
 				</tr>
 			</table>				
-		</section>
-
 		</div>
+
+		</div><!-- End Contact_Main Content Center -->
 		
 		<!-- Aside Right Side Bar -->
 		<div id="rightbar">
 			<aside class="right">
 			
-			<div class="payments">
-			<h3>Online Payments</h3>
-			</div>
+				<div class="payments">
+				<h3>Online Payments</h3>
+				</div>
 			
 				<h4><a href="#">Pay Bills Online</a></h4>
 				<h4><a href="#">Register For Online Payments</a></h4>
 			
-			<div class="weather">
-			<h3>Weather</h3>
-			</div>
+				<div class="weather">
+				<h3>Weather</h3>
+				</div>
 			
 				<h4 class="forcast">Today's Forecast</h4>
 				<p><em>Mostly Sunny</em></p>
-				<p class="temps">H: 100° | L: 84°</p>
+				<p class="temps">H: 95° | L: 78°</p>
 			
 			</aside>
 		</div>
@@ -203,7 +211,6 @@
 		</div><!-- Whitebox Ends -->
 				
 		<!-- Footer -->
-		<div id="footer">
 		<footer>
 			
 			<div id="footernav">
@@ -227,14 +234,12 @@
 			</div><!-- End Socialnetworks -->
 			
 			<div id="copyright">
-				<hr noshade>
+				<hr>
 				<p>&copy; 2012 City of Okeechobee. All Rights Reserved.</p>
 			</div>
 		
 		</footer>
-		</div>
 	
 	</body>
-	</div>
 	
 </html>
